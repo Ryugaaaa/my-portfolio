@@ -21,29 +21,61 @@ const Container = styled.div`
  justify-content: space-between;
 `
 const Left = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 `
 const Title = styled.h1`
-
+  font-size: 80px;
 `
 const WhatIDo = styled.div`
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
 `
 const Line = styled.img`
-
+  height: 5px;
 `
 const Subtitle = styled.h2`
-
+  color: #da4ea2;
 `
 const Desc = styled.p`
-
+  font-size: 24px;
+  color: lightgray;
 `
 const Button = styled.button`
-
+  background-color: #da4ea2;
+  color: white;
+  font-weight: 500;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 `
 
 const Right = styled.div`
+  flex: 2; 
+  position: relative;
+`
 
+const Img = styled.img`
+  width: 800px;
+  height: 600px;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: animate 2s infinite ease alternate;
+  @keyframes animate {
+    to{
+      transform: translateY(20px);
+    }
+  }
 `
 
 const Hero = () => {
@@ -52,17 +84,17 @@ const Hero = () => {
       <Navbar/>
       <Container>
         <Left>
-          <Title>Junior Web-Developer</Title>
+          <Title>Junior Web Developer</Title>
           <WhatIDo>
             <Line src={LinePng}/>
             <Subtitle>What I Do</Subtitle>
           </WhatIDo>
-          <Desc>I Enjoying Creating Websites With React</Desc>
+          <Desc>I Enjoy Creating Websites With React.</Desc>
           <Button>Learn More</Button>
         </Left>
         <Right>
 
-          <img src={MyCharacter}/>
+          <Img src={MyCharacter}/>
         </Right>
       </Container>
     </Section>
