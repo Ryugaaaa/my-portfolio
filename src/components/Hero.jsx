@@ -53,6 +53,10 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  &:hover {
+    transition: 0.5s;
+    background-color: #ff59bd;
+  }
 `
 
 const Right = styled.div`
