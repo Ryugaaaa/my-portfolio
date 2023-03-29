@@ -3,7 +3,6 @@ import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Who from "./components/Who";
 import Works from "./components/Works";
-import "./assets/img/bg.jpg";
 
 const Container = styled.div`
  height: 100vh;
@@ -12,7 +11,7 @@ const Container = styled.div`
  overflow-y: auto;
  scrollbar-width: none;
  color: white;
- background: radial-gradient(circle, rgba(0,0,120,1) 0%, rgba(8,69,75,1) 100%);
+ background: linear-gradient(to right top, #090046, #040545, #010b44, #000f42, #001240, #041343, #081545, #0d1648, #1a154f, #281256, #360c5b, #45005e);
  &::-webkit-scrollbar{
   display: none;
  }
