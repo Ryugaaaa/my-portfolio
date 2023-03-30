@@ -13,7 +13,7 @@ const Container = styled.div`
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding: 10px 0px;
+ padding: 15px 0px;
 `
 
 const Links = styled.div`
@@ -23,7 +23,7 @@ gap: 50px;
 `
 
 const Logo = styled.img`
-height: 50px;
+height: 40px;
 `
 
 const List = styled.ul`

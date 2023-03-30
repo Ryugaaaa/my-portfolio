@@ -94,7 +94,9 @@ const Hero = () => {
             <Subtitle>What I Do</Subtitle>
           </WhatIDo>
           <Desc>I Enjoy Creating Websites With React.</Desc>
+          <a href='https://react.dev/'>
           <Button>Learn More</Button>
+          </a>
         </Left>
         <Right>
 

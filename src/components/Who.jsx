@@ -72,7 +72,9 @@ const Who = () => {
             <Subtitle>Who I Am</Subtitle>
           </WhatIDo>
           <Desc>I'm Junior Web-Developer, Who Works With React.</Desc>
-          <Button>My Socials</Button>
+          <a href="https://www.google.com">
+          <Button>Contact Me</Button>
+          </a>
         </Right>
       </Container>
     </Section>
