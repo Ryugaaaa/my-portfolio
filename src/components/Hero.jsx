@@ -21,10 +21,13 @@ const Container = styled.div`
  justify-content: space-between;
 `
 const Left = styled.div`
+  flex: 2;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 20px;
+  text-align: center;
 `
 const Title = styled.h1`
   font-size: 80px;
@@ -60,7 +63,7 @@ const Button = styled.button`
 `
 
 const Right = styled.div`
-  flex: 2; 
+  flex: 1; 
   position: relative;
 `
 
