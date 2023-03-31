@@ -76,7 +76,9 @@ const Navbar = () => {
             </Links>
             <Icons>
                 <Icon src={SearchIcon}/>
+                <a href='https://www.linkedin.com/in/tato-robakidze-80631a255/'>
                 <Button>Hire Me Now</Button>
+                </a>
             </Icons>
         </Container>
     </Section>

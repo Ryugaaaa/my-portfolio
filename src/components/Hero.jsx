@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Navbar from './Navbar';
 import LinePng from './assets/img/line.png'
 import MyCharacter from './assets/img/mycharacter.png'
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Sphere } from '@react-three/drei';
 
 const Section = styled.div`
  height: 100vh;
@@ -102,7 +104,19 @@ const Hero = () => {
           </a>
         </Left>
         <Right>
-
+          <Canvas>
+            <OrbitControls enableZoom={false} />
+            <ambientLight intensity={1}/>
+            <directionalLight position={[3, 2, 1]} />
+            <Sphere args={[1, 100, 200]} scale={2}>
+              <meshDistanceMaterial
+              color="#4e0089"
+              attach='material'
+              distort={0.5}
+              speed={2}
+              />
+            </Sphere>
+          </Canvas>
           <Img src={MyCharacter}/>
         </Right>
       </Container>

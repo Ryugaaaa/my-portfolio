@@ -70,7 +70,7 @@ const Right = styled.div`
 `
 
 const ReactLogo = styled.img`
-    animation: rotate 60s alternate;
+    animation: rotate 60s infinite alternate;
   @keyframes rotate {
     from{
       rotate: 0deg;
