@@ -6,7 +6,7 @@ import MyLogo from './assets/img/me.png'
 const Section = styled.div`
     display: flex;
     justify-content: center;
-`
+    `
 
 const Container = styled.div`
  width: 1400px;
@@ -76,7 +76,7 @@ const Navbar = () => {
             </Links>
             <Icons>
                 <Icon src={SearchIcon}/>
-                <a href='https://www.linkedin.com/in/tato-robakidze-80631a255/'>
+                <a href='https://www.linkedin.com/in/tato-robakidze-80631a255/' target="_blank" rel="noopener noreferrer">
                 <Button>Hire Me Now</Button>
                 </a>
             </Icons>
