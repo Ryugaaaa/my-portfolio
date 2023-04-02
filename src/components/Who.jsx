@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import React from 'react'
 import styled from "styled-components";
 import Cube from './Cube';
+import { useState } from 'react';
 
 const Section = styled.div`
  height: 100vh;
@@ -52,7 +53,8 @@ const Right = styled.div`
     background-color: #da4ea2;
     color: white;
     font-weight: 500;
-    width: 100px;
+    width: 150px;
+    height: 50px;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -64,6 +66,12 @@ const Right = styled.div`
   `
 
 const Who = () => {
+  const [buttonText, setButtonText] = useState('Contact');
+
+  function handleClick() {
+    setButtonText('+995 551 32 98 32');
+  }
+
   return (
     <Section>
       <Container>
@@ -81,9 +89,7 @@ const Who = () => {
             <Subtitle>Who I Am</Subtitle>
           </WhatIDo>
           <Desc>I'm Junior Web-Developer, Who Works With React.</Desc>
-          <a href="https://www.google.com">
-          <Button>Contact</Button>
-          </a>
+          <Button onClick={handleClick}>{buttonText}</Button>
         </Right>
       </Container>
     </Section>

@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components'
 import SearchIcon from './assets/img/search.png'
 import MyLogo from './assets/img/me.png'
+import MySection from "./Who"
 
 const Section = styled.div`
     display: flex;
     justify-content: center;
-    `
+`
 
 const Container = styled.div`
  width: 1400px;
@@ -62,13 +63,20 @@ cursor: pointer;
 
 
 const Navbar = () => {
+
+        const ref = useRef(null);
+      
+        const handleClick = () => {
+          ref.current?.scrollIntoView({behavior: 'smooth'});
+        };
+
   return (
     <Section>
         <Container>
             <Links> 
             <Logo src={MyLogo}/>
-            <List>
-                <ListItem>Home</ListItem>
+            <List>  
+                <ListItem onClick={handleClick}>Home</ListItem> 
                 <ListItem>Me</ListItem>
                 <ListItem>Works</ListItem>
                 <ListItem>Contact</ListItem>

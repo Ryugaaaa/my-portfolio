@@ -99,7 +99,7 @@ const Hero = () => {
             <Subtitle>What I Do</Subtitle>
           </WhatIDo>
           <Desc>I Enjoy Creating Websites With React.</Desc>
-          <a href='https://react.dev/'>
+          <a href='https://react.dev/' target="_blank" rel="noopener noreferrer">
           <Button>Learn More</Button>
           </a>
         </Left>
