@@ -91,7 +91,7 @@ const Hero = () => {
   return (
     <Section>
       <Navbar/>
-       {/* <Container>
+       <Container>
         <Left>
           <Title>Junior Web Developer</Title>
           <WhatIDo>
@@ -121,7 +121,7 @@ const Hero = () => {
           </Canvas>
           <Img src={MyCharacter}/>
         </Right>
-      </Container>  */}
+      </Container> 
     </Section>
   )
 }
