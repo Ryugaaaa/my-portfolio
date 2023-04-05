@@ -1,12 +1,14 @@
 import React, { useRef } from 'react'
 import styled from 'styled-components'
-import SearchIcon from './assets/img/search.png'
 import MyLogo from './assets/img/me.png'
-import MySection from "./Who"
 
 const Section = styled.div`
     display: flex;
     justify-content: center;
+      
+    @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 const Container = styled.div`
@@ -15,12 +17,21 @@ const Container = styled.div`
  justify-content: space-between;
  align-items: center;
  padding: 15px 0px;
+
+ @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 10px;
+  }
 `
 
 const Links = styled.div`
 display: flex;
 align-items: center;
 gap: 50px;
+
+@media only screen and (max-width: 768px) {
+    gap: 10px;
+  }
 `
 
 const Logo = styled.img`
@@ -31,6 +42,11 @@ const List = styled.ul`
 display: flex;
 gap: 20px;
 list-style: none;
+
+@media only screen and (max-width: 768px) {
+    gap: 10px;
+    font-size: 15px;
+  }
 `
 
 const ListItem = styled.li`
@@ -43,10 +59,6 @@ align-items: center;
 gap: 20px;
 `
 
-const Icon = styled.img`
-width: 25px;
-cursor: pointer;
-`
 const Button = styled.button`
 width: 120px;
 padding: 10px;
@@ -55,6 +67,11 @@ color: white;
 border: none;
 border-radius: 5px;
 cursor: pointer;
+
+@media only screen and (max-width: 768px) {
+    margin: 0 0 0 10px;
+  }
+
 &:hover {
     transition: 0.5s;
     background-color: #ff59bd;
@@ -83,7 +100,6 @@ const Navbar = () => {
             </List>
             </Links>
             <Icons>
-                <Icon src={SearchIcon}/>
                 <a href='https://www.linkedin.com/in/tato-robakidze-80631a255/' target="_blank" rel="noopener noreferrer">
                 <Button>Hire Me Now</Button>
                 </a>

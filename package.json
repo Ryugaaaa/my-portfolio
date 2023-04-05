@@ -16,6 +16,7 @@
     "react-popup-alert": "^2.0.0",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.9",
     "react-simple-maps": "^3.0.0",
     "react-three": "^0.9.7",
     "styled-component": "^2.8.0",
